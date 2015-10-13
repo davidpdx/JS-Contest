@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Contest</title>
+
+<style>
+body {
+	background-color: #000;
+	width: 100%;
+	text-align: center;
+}
+#boxy {
+	width: 600px;
+	height: 300px;
+	text-align: center;
+	background-color: #fff;
+	margin-left: auto;
+	margin-right: auto;
+}
+#output {
+	color: red;
+}
+#dot, #dotdot, #dotdotdot {
+	display: none;
+}
+input {
+	color: red;
+	font-size: 22px;
+}
+button {
+	font-size: 22px;
+}
+#winningNumber {
+	display:none;
+}
+</style>
+<script src="jquery.min.js"></script>
+</head>
+<body>
+<div id="boxy">
+	
+	<h1>Enter the number of contestants:</h1>
+	<p><input id="numContestants" type="text" size="3">
+	<button type="submit" onclick="Roll();" id="roll">Roll!</button></p>	
+
+	<div id="dot"><h1>.</h1></div>
+	<div id="dotdot"><h1>..</h1></div>
+	<div id="dotdotdot"><h1>...</h1></div>
+	
+	<div id="winningNumber">&nbsp;</div>
+
+</div><!--end boxy-->
+<script src="roll.js"></script>
+<body>
+</html>
